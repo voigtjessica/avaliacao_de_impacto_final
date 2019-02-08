@@ -6,10 +6,10 @@ library(httr)
 library(twitteR)
 library(dplyr)
 
-consumer_key <- "M5qzHKcWYbop2HzJk5kdvMDJm"
-consumer_secret <- "d1d32vWVaQ5KCQ0dUIHGvsZUDHlHBZH33cKbtaNSTWox09dLvg"
-access_token <- "370147723-oPRMjBDxJQo14LGZPcdm5xZ8IJTziADnBQiYtMGO"
-access_secret <- "0j4efITETyyMevQPz0dGlh50jmA7vUlOhJLXjQc0S8WrE"
+consumer_key <- 
+consumer_secret <- 
+access_token <- 
+access_secret <- 
 
 
 #Usamos agora a função "setup_twitter_oauth" e nos conectamos ao Twitter via R:
