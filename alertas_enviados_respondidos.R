@@ -9,6 +9,7 @@ library(janitor)
 library(googledrive)
 library(tidyr)
 library(googlesheets)
+library(xlsx)
 
 drive_find(n_max=10)
 gs_ls() 
@@ -16,7 +17,7 @@ gs_ls()
 pg = dbDriver("PostgreSQL")
 
 con = dbConnect(pg,
-                user="read_only_user", password="pandoapps",
+                user="read_only_user", password="",
                 host ="aag6rh5j94aivq.cxbz7geveept.sa-east-1.rds.amazonaws.com",
                 port = 5432, dbname="ebdb")
 
@@ -101,6 +102,7 @@ Encoding(uf_alertas$municipio) <- "UTF-8"
 setwd("C:/Users/coliv/Documents/respostas_relatorio")
 
 fwrite(municipios_alertas, file="municipios_alertas2.csv")
+save(municipios_alertas, file="municipios_alertas.Rdata")
 
 drive_upload(
   "municipios_alertas2.csv",
@@ -109,6 +111,7 @@ drive_upload(
   type = "spreadsheet")
 
 fwrite(uf_alertas, file="uf_alertas2.csv")
+save(uf_alertas, file="uf_alertas.Rdata")
 
 drive_upload(
   "uf_alertas2.csv",
@@ -124,6 +127,7 @@ uf_grouped_alertas <- todos_alertas %>%
             alertas_respondidos = sum(respondido))
 
 fwrite(uf_grouped_alertas, file="uf_grouped_alertas.csv")
+save(uf_grouped_alertas, file="uf_grouped_alertas.Rdata")
 
 drive_upload(
   "uf_grouped_alertas.csv",
@@ -223,10 +227,12 @@ Encoding(respostas_obtidas$responsabilidade) <- "UTF-8"
 setwd("C:/Users/coliv/Documents/respostas_relatorio")
 
 fwrite(respostas_obtidas, file="respostas_obtidas.csv")
-library(xlsx)
+
 
 write.xlsx(as.data.frame(respostas_obtidas), file="respostas_obtidas.xlsx", sheetName="respostas_obtidas",
            col.names=TRUE, row.names=FALSE, append=FALSE, showNA=FALSE)
+
+save(respostas_obtidas, file="respostas_obtidas.Rdata")
 
 drive_upload(
   "respostas_obtidas.xlsx",
