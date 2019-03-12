@@ -1,5 +1,12 @@
 ## Objeto "todos_alertas" 
 
+### O que é?
+
+Um objeto R que contém um data.frame onde cada entrada é um alerta recebido pelo projeto Tá de Pé. 
+Os alertas têm início no dia 17/06/2017 e vão até o dia 01/02/2019. 
+
+### Codebook:
+
 | Nome Coluna    | Descrição           |
 | :-------------:|:-------------------:|
 | inspection_id  | id do alerta |
