@@ -48,3 +48,21 @@ Pode assumir os seguintes valores:
 * Contratação: Licitação já foi realizada e o contrato está sendo feito
 * Em Reformulação: Quando há interrupção do contrato. Nunca ficou claro se as obras com esse status já teriam sido iniciadas ou se obras não iniciadas também poderiam ter esse status.
 
+É importante frisar que essa classificação é oficial e apenas no caso "em reformulação" admite a existência de um segundo contrato para uma mesma obra. Isso foi abordado no [relatório da Transparência Brasil em 2017](https://www.transparencia.org.br/downloads/publicacoes/RelatorioTadePe23082017.pdf) :
+
+*"A Transparência Brasil constatou, entretanto, que das 2.477 obras em reformulação, licitação ou planejamento pelo proponente, 756 (31%) são obras que já foram iniciadas no passado, tiveram que ser interrompidas e voltaram para fases iniciais pré-construção. Portanto, seria mais preciso que essas obras fossem classificadas como inacabadas ou paralisadas e que estão para serem retomadas."*
+
+### Visível no app:
+
+Para uma obra estar visível no app TDP, ela precisa ter o cronograma conhecido e não estar concluída ou cancelada. Na primeira fase, estavam visíveis apenas aquelas que tinham um dos seguintes projetos:
+
+* Espaço educativo 12 salas
+* Espaço educativo 1 sala
+* Espaço educativo 2 salas
+* Espaço educativo 4 salas
+* Espaço educativo 6 salas
+* Projeto 1 Convencional
+* Projeto 2 Convencional
+
+Esses projetos possuem cronogramas padronizados, e por isso conhecidos.
+Já na segunda fase do projeto foram adicionados também cronogramas solicitados via LAI. A coluna visivel_no_app dá conta tanto dos cronogramas padronizados quanto daqueles obtidos via LAI.
