@@ -145,3 +145,5 @@ todos_alertas <- inspections %>%
          inspection_status, entity_who_answered, answer_content, valid_answer) 
 
 
+setwd("C:/Users/coliv/Documents/respostas_relatorio/final_todos_alertas")
+save(todos_alertas, file="todos_alertas.Rdata")
