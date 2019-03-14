@@ -37,6 +37,14 @@ df.timeline <- twListToDF(tdp_timeline)
 tweets_tdpapp <- df.timeline %>%
   mutate(tipo_mensagem = ifelse(grepl("A construção da", text), "alerta",
                                 ifelse(grepl("Veja a resposta", text), "resposta",
-                                       "outro")))
+                                       "outro"))) %>%
+filter(tipo_mensagem != "outro" ) %>%
+mutate(entidade_que_respondeu = ifelse(tipo_mensagem == "resposta" , sub(".*?que", "", text),
+                         sub("A construção d" , "", text)),
+         entidade_que_respondeu = str_sub(entidade_que_respondeu, 3, str_length(entidade_que_respondeu)),
+         entidade_que_respondeu  = ifelse(tipo_mensagem == "resposta" , sub("deu.*", "", entidade_que_respondeu),
+                         sub("apresenta.*" , "", entidade_que_respondeu)),
+         alerta_encaminhado_obra = ifelse(tipo_mensagem == "alerta", entidade_que_respondeu, NA),
+         entidade_que_respondeu = ifelse(tipo_mensagem == "resposta", entidade_que_respondeu, NA))
 
 save(tweets_tdpapp , file="tweets_tdpapp.Rdata")
