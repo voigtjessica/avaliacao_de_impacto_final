@@ -28,4 +28,4 @@ O arquivo foi criado no dia 13 de fevereiro com os tweets que até então tinham
 ### Importante:
 
 Conversei com os nossos fornecedores e não há como vincular um tweet a um alerta específico. Os dados nas últimas 3 colunas foram gerados por mim a partir de informações do texto do tweet. 
-Eu não realizei um join do nome das obras com a base de projetos pois existem muitas obras com nomes genéricos e repetidos ( "ESCOLA PAC / 001 ETC...") o que iria gerar uma série de duplicadas no meu bando e eu não necessariamente teria como dizer a qual dos alertas aquele tweet se refere. 
+Eu não realizei um join do nome das obras com a base de projetos pois existem muitas obras com nomes genéricos e repetidos ( "ESCOLA PAC / 001 ETC...") o que iria gerar uma série de duplicadas no meu banco e eu não necessariamente teria como dizer a qual dos alertas aquele tweet se refere. 
