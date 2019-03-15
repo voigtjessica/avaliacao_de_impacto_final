@@ -18,8 +18,8 @@ O arquivo foi criado no dia 13 de fevereiro com os tweets que até então tinham
 |retweetCount| Contagem de retweets |
 |isRetweet| Se é um retweet |
 |retweeted| Se foi retuitado |
-|longitude| localização do momento da postagem |
-|latitude| localização do momento da postagem |
+|longitude| Localização no momento da postagem |
+|latitude| Localização no momento da postagem |
 |tipo_mensagem| Se a mensagem automatica foi gerada a partir de um alerta ou de uma resposta |
 |entidade_que_respondeu| Nome da entidade que respondeu ao alerta e foi tweetada na nossa conta |
 |alerta_encaminhado_obra| Nome da obra para o qual foi encaminhado o alerta |
