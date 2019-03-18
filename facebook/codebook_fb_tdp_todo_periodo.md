@@ -1,4 +1,4 @@
-## Anúncios TDP 
+## fb_tdp_todo_periodo
 
 **Descrição**: Arquivo que contém informações sobre todos os *posts pagos* e *anúncios* realizados para o projeto Tá de Pé entre 13/08/2017 e 15/02/2019.
 O arquivo foi obtido por meio da exportação da tabela do gerenciador de anúncios do Facebook.
