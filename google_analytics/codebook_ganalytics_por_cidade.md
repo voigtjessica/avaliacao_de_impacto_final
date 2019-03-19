@@ -1,4 +1,4 @@
-## tdp_origens_todo_periodo
+## ganalytics_por_cidade
 
 Arquivo obtido via Google Analytics com os novos usuários do app Tá de Pé. Compreende a todo o período de 13/08/2017 até 15/02/2019 .
 
