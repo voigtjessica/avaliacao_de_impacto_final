@@ -12,7 +12,7 @@ Os alertas têm início no dia 17/06/2017 e vão até o dia 01/02/2019.
 | Nome Coluna    | Descrição           |
 | :-------------:|:-------------------:|
 | inspection_id  | id do alerta |
-| campaign_alert | se alerta faz parte ou não da campanha, se sim == 1, se não == 2 |
+| campaign_alert | se alerta faz parte ou não da campanha, se sim == 1, se não == 0 |
 | inspection_created_at| data de criação do alerta |
 | prefeitura | Se alerta foi encaminhado para a prefeitura |
 | gov_do_estado | Se alerta foi encaminhado para o governo estadual|
